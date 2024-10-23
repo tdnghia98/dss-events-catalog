@@ -11,6 +11,9 @@ importers:
       '@eventcatalog/core':
         specifier: 2.10.1
         version: 2.10.1(@babel/core@7.25.9)(@babel/template@7.25.9)(@stoplight/markdown-viewer@5.7.1(@stoplight/mosaic-code-viewer@1.53.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@stoplight/mosaic@1.53.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@stoplight/mosaic-code-viewer@1.53.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react-dom@17.0.25)(@types/react@17.0.83)(immer@9.0.21)(rollup@4.24.0)(vite@5.4.10(@types/node@20.16.15))
+      concurrently:
+        specifier: ^9.0.1
+        version: 9.0.1
 
 packages:
 
@@ -102,8 +105,8 @@ packages:
   '@asyncapi/protobuf-schema-parser@3.2.14':
     resolution: {integrity: sha512-7v64Jxhz2IBfaQECUhfwuLRMFQTysvmqtvT+Esgd9NooIPRnkEzgCbBnC25oGjzSB6Sju28G406lQpO15HHaEw==}
 
-  '@asyncapi/react-component@2.4.1':
-    resolution: {integrity: sha512-/HrVs4aYt/IsDTeUxV5yaupZVhr11kHIqe8h/KjndyCfjkHF0NrptTFfPYY1Mr90lUFvBx/LBCoRSFLxmxSz5A==}
+  '@asyncapi/react-component@2.4.2':
+    resolution: {integrity: sha512-bhOHLDX3+mSiN+kXS5wtNFFn83NL1CvSuWCn3fswGhYSkpYvDfh6ZdOYfPcMSEF+ygPAZSl6l2RraNd/Qctkiw==}
     peerDependencies:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
@@ -1894,6 +1897,11 @@ packages:
   concurrently@8.2.2:
     resolution: {integrity: sha512-1dP4gpXFhei8IOtlXRE/T/4H88ElHgTiUzh71YUmtjTEHMSRS2Z/fgOxHSxxusGHogsRfxNq1vyAwxSC+EVyDg==}
     engines: {node: ^14.13.0 || >=16.0.0}
+    hasBin: true
+
+  concurrently@9.0.1:
+    resolution: {integrity: sha512-wYKvCd/f54sTXJMSfV6Ln/B8UrfLBKOYa+lzc6CHay3Qek+LorVSBdMVfyewFhRbH0Rbabsk4D+3PL/VjQ5gzg==}
+    engines: {node: '>=18'}
     hasBin: true
 
   convert-source-map@2.0.0:
@@ -5176,7 +5184,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@asyncapi/react-component@2.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@asyncapi/react-component@2.4.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@asyncapi/avro-schema-parser': 3.0.24
       '@asyncapi/openapi-schema-parser': 3.0.24
@@ -5460,7 +5468,7 @@ snapshots:
       '@astrojs/mdx': 3.1.8(astro@4.16.7(@types/node@20.16.15)(rollup@4.24.0)(typescript@5.6.3))
       '@astrojs/react': 3.6.2(@types/react-dom@17.0.25)(@types/react@17.0.83)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.10(@types/node@20.16.15))
       '@astrojs/tailwind': 5.1.2(astro@4.16.7(@types/node@20.16.15)(rollup@4.24.0)(typescript@5.6.3))(tailwindcss@3.4.14)
-      '@asyncapi/react-component': 2.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@asyncapi/react-component': 2.4.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@headlessui/react': 2.1.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@heroicons/react': 2.1.5(react@18.3.1)
       '@parcel/watcher': 2.4.1
@@ -7618,6 +7626,16 @@ snapshots:
       rxjs: 7.8.1
       shell-quote: 1.8.1
       spawn-command: 0.0.2
+      supports-color: 8.1.1
+      tree-kill: 1.2.2
+      yargs: 17.7.2
+
+  concurrently@9.0.1:
+    dependencies:
+      chalk: 4.1.2
+      lodash: 4.17.21
+      rxjs: 7.8.1
+      shell-quote: 1.8.1
       supports-color: 8.1.1
       tree-kill: 1.2.2
       yargs: 17.7.2
